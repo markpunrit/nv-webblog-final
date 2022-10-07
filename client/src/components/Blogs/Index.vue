@@ -1,6 +1,10 @@
 <template>
 	<div>
+<<<<<<< HEAD
 		<h2>เเมว</h2>
+=======
+		<h2>cat</h2>
+>>>>>>> 1a453d8621bbc1a668296bed448106c1ca27010c
 		<p><button v-on:click="logout">Logout</button></p>
 		<h4>จํานวน blog {{ blogs.length }}</h4>
 		<p><button v-on:click="navigateTo('/blog/create')">สร้าง blog</button></p>
