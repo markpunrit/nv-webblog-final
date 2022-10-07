@@ -2,7 +2,7 @@ const UserController = require('./controllers/UserController.js');
 const UserAuthenController = require('./controllers/UserAuthenController');
 const isAuthenController = require('./authen/isAuthenController')
 const BlogController = require('./controllers/BlogController');
-const CatControllesr = require('./controllers/CatController');
+const CatController = require('./controllers/CatController');
 const Blog = require('./models/Blog.js');
 const Cat = require('./models/Cat.js');
 
@@ -36,11 +36,11 @@ module.exports = (app) => {
     app.get('/blog/:blogId', BlogController.show)
     app.get('/blogs', BlogController.index)
 
-    app.post('/Cat', BlogController.create)
-    app.put('/Cat/:CatId', BlogController.put)
-    app.delete('/Cat/:CatId', BlogController.remove)
-    app.get('/Cat/:CatId', BlogController.show)
-    app.get('/Cat', BlogController.index)
+    app.post('/Cat', CatController.create)
+    app.put('/Cat/:CatId', CatController.put)
+    app.delete('/Cat/:CatId', CatController.remove)
+    app.get('/Cat/:CatId', CatController.show)
+    app.get('/Cat', CatController.index)
 
     app.post('/upload', function (req, res) {
         upload(req, res, function (err) {
