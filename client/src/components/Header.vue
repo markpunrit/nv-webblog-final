@@ -1,5 +1,9 @@
 <template>
 	<div>
+		<section>
+			<BODY BACKGROUND="a3.png"> </BODY>  
+		<center><p><img src="@/assets/a2.png" width="100" height="100"></p></center>
+	    </section>
 		<div class="nv-navbar">
 			<ul class="nav">
 				<li><router-link :to="{ name: 'blogs' }">หน้าเเรก</router-link></li>
@@ -42,7 +46,7 @@ export default {};
 	color: rgb(255, 255, 255);
 }
 .nv-navbar .nav li a.router-link-active {
-	background-color: rgb(232, 159, 57);
+	background-color: rgb(226, 136, 97);
 	color: rgb(255, 255, 255);
 }
 .clearfix {
