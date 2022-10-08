@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1>Show Blog</h1>
+		<h1>Show cat</h1>
 		<p>id: {{ blog.id }}</p>
 		<p>title: {{ blog.title }}</p>
 		<p>content: {{ blog.content }}</p>

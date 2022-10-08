@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <h1>User Login</h1>
+  <center><div>
+    <h1>admin login</h1>
     <form v-on:submit.prevent="onLogin">
       <p>Username: <input type="text" v-model="email" /></p>
       <p>Password: <input type="password" v-model="password" /></p>
       <p><button type="submit">Login</button></p>
       <div class="error" v-if="error">{{error}}</div>
     </form>
-  </div>
+  </div></center>
 </template>
 <script>
 import AuthenService from "@/services/AuthenService";
