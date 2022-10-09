@@ -1,16 +1,19 @@
 <template>
-	<div>
-		<section>
-			<BODY BACKGROUND="a3.png"> </BODY>  
+	<div> 
+		<head>
+  <title>Bootstrap </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
 		<center><p><img src="@/assets/a2.png" width="100" height="100"></p></center>
-	    </section>
 		<div class="nv-navbar">
 			<ul class="nav">
 				<li><router-link :to="{ name: 'blogs' }">หน้าเเรก</router-link></li>
 				<li><router-link :to="{ name: 'users' }">สายพันธ์ุเเมว</router-link></li>
 				<li><router-link :to="{ name: 'comments' }">อุปกรณ์การเลี้ยงเเมว</router-link></li>
-				<li><router-link :to="{ name: 'login' }">การเลี้ยงเเมว</router-link></li>
-				<li><router-link :to="{ name: 'blogs' }">ติดต่อเรา</router-link></li>
+				<li><router-link :to="{ name: 'login' }">Login</router-link></li>
+				<li><router-link :to="{ name: 'blogs' }">log</router-link></li>
 			</ul>
 			<div class="clearfix" />
 		</div>
@@ -43,7 +46,7 @@ export default {};
 .nv-navbar .nav li a:hover {
 	padding: 10px;
 	text-decoration: none;
-	color: rgb(255, 255, 255);
+	color: rgb(226, 136, 97);
 }
 .nv-navbar .nav li a.router-link-active {
 	background-color: rgb(226, 136, 97);
