@@ -6,14 +6,7 @@
 		    <p>ลักษณะนิสัย: {{ blog.category }}</p>
 		    <p>ราคา: {{ blog.status }} บาท</p>
             <p>รูปภาพ: {{ blog.content }}</p>
-			    <p>
-				    <vue-ckeditor
-					v-model.lazy="blog.content"
-					:config="config" 
-					@blur="onBlur($event)"
-					@focus="onFocus($event)"
-				/>
-			    </p>	
+			    
 		    <p>
 			  <button v-on:click="navigateTo('/blog/edit/' + blog.id)">แก้ไขข้อมูล</button>
 			  <button v-on:click="deleteBlog(blog)"> ลบข้อมูล </button>
