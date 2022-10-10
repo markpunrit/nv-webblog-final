@@ -7,7 +7,7 @@
 		    <p>ราคา: {{ blog.status }} บาท</p>
             <p>รูปภาพ: </p>
 			    
-		    <div class="blog-pig">
+		    <div class="blog-pic">
 				<Transition name="fade">
 			        <div class="thumbnail-pic" v-if="blog.thumbnail != 'null'">
 					  <img :src="BASE_URL+blog.thumbnail" alt="thumbnail">
