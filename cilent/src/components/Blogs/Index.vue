@@ -14,7 +14,8 @@
             <p>ลักษณะนิสัย: {{ blog.category }} </p>
             <p>ราคา: {{ blog.status }}บาท </p>
             <p>
-              <button v-on:click="navigateTo('/blog/'+ blog.id)"> แสดงข้อมูล </button> 
+              <button v-on:click="navigateTo('/blog/'+ blog.id)"> แสดงข้อมูล </button>
+               
             </p>
             <hr>
         </div>

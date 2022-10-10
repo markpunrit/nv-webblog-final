@@ -3,7 +3,7 @@
         <div>
             <h2> เเมวสายพันธุ์ต่างๆ </h2>
             <!-- <p><button v-on:click="logout"> Logout </button></p> -->
-            <h1><p><button v-on:click="navigateTo('/blog/create')"> เเมว </button></p></h1>
+            <h1><p><button v-on:click="navigateTo('/blog/create')"> add </button></p></h1>
             <div v-for="blog in blogs" v-bind:key="blog.id"></div>       
         </div>
     </div>

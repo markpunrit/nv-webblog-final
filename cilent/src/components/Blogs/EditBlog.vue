@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1>แก้ไขข้อมูลหนังสือ</h1>
+		<h1>แก้ไขข้อมูล</h1>
 		<form v-on:submit.prevent="editBlog">
 			<p>ชื่อเรื่อง: <input type="text" v-model="blog.title" /></p>
             <p>ลักษณะนิสัย: <input type="text" v-model="blog.category" /></p>
