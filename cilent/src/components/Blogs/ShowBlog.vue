@@ -5,9 +5,22 @@
 		    <p>ชื่อสายพันธุ์: {{ blog.title }}</p>
 		    <p>ลักษณะนิสัย: {{ blog.category }}</p>
 		    <p>ราคา: {{ blog.status }} บาท</p>
-            <p>รูปภาพ: {{ blog.content }}</p>
+            <p>รูปภาพ: </p>
 			    
-		    <p>
+		    <div class="blog-pig">
+				<Transition name="fade">
+			        <div class="thumbnail-pic" v-if="blog.thumbnail != 'null'">
+					  <img :src="BASE_URL+blog.thumbnail" alt="thumbnail">
+					</div>  
+				</Transition>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<p>
 			  <button v-on:click="navigateTo('/blog/edit/' + blog.id)">แก้ไขข้อมูล</button>
 			  <button v-on:click="deleteBlog(blog)"> ลบข้อมูล </button>
 			  <button v-on:click="navigateTo('/blogs')">กลับ</button>
@@ -23,6 +36,7 @@ import VueCkeditor from 'vue-ckeditor2'
 export default {
 	data() {
 		return {
+			BASE_URL: "http://localhost:8081/assets/uploads/",
 			blog: {
 				title: "",
 				thumbnail: "null",
@@ -31,8 +45,6 @@ export default {
 				category: "",
 				comment: "",
 				status: "",
-				
-				
 			},
 
 		    config:{
