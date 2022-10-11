@@ -19,6 +19,8 @@
 			<br>
 			<br>
 			<br>
+			<br>
+			<br>		
 
 			<p>
 			  <button v-on:click="navigateTo('/blog/edit/' + blog.id)">แก้ไขข้อมูล</button>
